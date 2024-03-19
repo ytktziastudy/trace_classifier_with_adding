@@ -1,4 +1,4 @@
-Model and Dataset Configuration
+## Model and Dataset Configuration
 DATASET_SHARE: Indicates if the dataset is shared across processes. This flag might be used when initializing data loaders or managing multiprocessing tasks.
 PACTETCNN: A flag to enable or disable the use of Convolutional Neural Networks (CNN) for packet analysis. This would influence the choice of architecture in functions related to feature extraction from packets.
 TRANSFORMER: Determines whether a Transformer model is used. This could affect model initialization and the architecture setup functions, dictating the use of attention mechanisms over other types.
@@ -8,9 +8,9 @@ LAG_SIZE: Configures the lag size for temporal features, potentially used in pre
 K_FOLD, CORE_NUM: These parameters control the execution of k-fold cross-validation and parallel processing, affecting functions related to model evaluation and training.
 MAX_EPOCH, DEVICE: Determine the maximum number of training epochs and the computation device (CPU/GPU), influencing the main training loop and device allocation for tensors.
 DATASET_FOLDER, DATASET_NAME: Specify the location and name of the dataset, used in data loading and preprocessing functions.
-Overfitting Handling and Model Parameters
+## Overfitting Handling and Model Parameters
 Flags like ES_FLAG, LNORM_FLAG, WD_FLAG, DROPOUT_FLAG, USEBN_FLAG, USEMM_FLAG, and DATA_ENHANCEMENT_FLAG control various strategies to handle overfitting, such as early stopping, layer normalization, weight decay, dropout, batch normalization, and data enhancement. These are crucial in the model's training process to ensure generalization.
-Experimentation and Output Configuration
+## Experimentation and Output Configuration
 FLOW_CUT_FLAG, FLOW_CUT_SIZE, SCALE_1dCNN, SCALE_SIZE, HU2_FLAG, FIX_M1_CNN_LENGTH, SIZE_2dCNN, TRAIN_SAMPLE_MAX, VALID_SAMPLE_MAX, WF_MIX_PAGE: These parameters are used to tweak the model's input data structure, the size of the dataset for training and validation, and experimental features like flow cutting, scaling for 1D CNN, and handling the dataset's flow. These configurations affect data preprocessing, model architecture adjustments, and how datasets are split and utilized during training and validation.
 USE_WARM_UP, WARM_UP: Determine whether a warm-up phase is used in training to gradually increase the learning rate, used in the training loop to stabilize the optimization process.
 OUTPATH: Specifies the directory for output files, such as trained model weights and evaluation results, influencing where model artifacts are saved.
