@@ -39,9 +39,9 @@ Change the config file and run main.py.
 + add by ktzia
 ```
 ##extra deatils
-* **dataset.py** [main-readme](dataset-readme.md) Functions for loading and processing datasets 
-* **model.py** [main-readme](model-readme.md) Defines the neural network model (Net) used for classification.
-* **mylib.py** [main-readme](mylib-readme.md) Contains utility functions for dataset processing and evaluation.
+* **dataset.py** [dataset-readme](dataset-readme.md) Functions for loading and processing datasets 
+* **model.py** [model-readme](model-readme.md) Defines the neural network model (Net) used for classification.
+* **mylib.py** [mylib-readme](mylib-readme.md) Contains utility functions for dataset processing and evaluation.
 * **my_hilbertcurve.py**
 * **draw_tsne.py**
 
