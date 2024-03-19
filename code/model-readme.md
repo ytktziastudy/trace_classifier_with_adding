@@ -3,7 +3,7 @@
 + Add by ktzia
 ```
 
-The main script combines all the previous steps to execute the model training and evaluation. It configures the model, preprocesses the dataset, trains the model on the training dataset, evaluates it on the validation and test datasets, and optionally visualizes the results.
+In the model.py script, the Net class typically defines the architecture of the neural network model used for processing and classifying data, such as traffic fingerprinting or other related tasks.
     
 list function in model.py
 * **__init__**
