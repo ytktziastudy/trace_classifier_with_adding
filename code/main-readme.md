@@ -1,13 +1,17 @@
 ## Code Main Structure 
-## Add by ktzia
+```diff
++ Add by ktzia
+```
 
+The main script combines all the previous steps to execute the model training and evaluation. It configures the model, preprocesses the dataset, trains the model on the training dataset, evaluates it on the validation and test datasets, and optionally visualizes the results.
 
 list function in main.py
-* **main** the main function [main-readme](code/main-readme.md)
-* **one_of_k_fold_test** the config settings
-* **read_dataset** Tony-Y's implementation of [pytorch_warmup](https://github.com/Tony-Y/pytorch_warmup).
-* **one_fold_test** the training output files
-* **k_fold_test** other lib py files
+* **main** the main function
+  
+* **one_of_k_fold_test** 
+* **read_dataset** 
+* **one_fold_test** 
+* **k_fold_test** 
 * **one_round_test**
 
 
