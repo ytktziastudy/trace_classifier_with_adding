@@ -10,6 +10,9 @@ PACKET2FLOW = 'LSTM+ATT' # 'ATT, LSTM, TREE, LSTM+ATT,1dCNN, 2dCNN' 1dCNN can be
                       # 2dCNN uses hilbertcurve2d to transfer a flow into a matrix.
 FLOW2TRACE = 'LSTM+ATT' # 'ATT, LSTM, TREE, LSTM+ATT'
 
+#lag-size
+LAG_SIZE = 0
+
 # k-fold
 K_FOLD = 10
 CORE_NUM = 1    # use worker number, 1 - n
