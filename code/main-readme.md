@@ -6,9 +6,11 @@
 The main script combines all the previous steps to execute the model training and evaluation. It configures the model, preprocesses the dataset, trains the model on the training dataset, evaluates it on the validation and test datasets, and optionally visualizes the results.
 
 list function in main.py
-* **main** ---
+* **main**
+  -----
   The primary entry point of the script. It orchestrates the overall process, including setting up the environment, initiating model training, performing     evaluations, and optionally visualizing the results. It determines which training and evaluation functions to call based on the configuration.
-* **one_of_k_fold_test**---
+* **one_of_k_fold_test**
+  -------------
   **Description:**---
   Performs a single fold of k-fold cross-validation. This function is responsible for dividing the dataset into training, validation, and test sets for one     
   specific   fold, training the model on this fold, and evaluating its performance
