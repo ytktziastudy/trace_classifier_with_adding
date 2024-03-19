@@ -1,5 +1,8 @@
 # Intro
 --------
+this code copy from https://github.com/shashadehuajiang/trace_classifier with my additions
+The changes were made in the [config](config.py) file as well as in the [dataset](code/dataset.py) file
+----------
 This repo is the official implementation of **An Input-Agnostic Hierarchical Deep Learning Framework for Traffic Fingerprinting (USENIX Security '23)**. We provide code and datasets here.
 
 It provides a simple but effective method for trace classification.
