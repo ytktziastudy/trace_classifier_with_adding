@@ -78,6 +78,7 @@ class G_CONFIG:
         self.WARM_UP = WARM_UP
         self.PACKET2FLOW = PACKET2FLOW
         self.FLOW2TRACE = FLOW2TRACE
+        self.LAG_SIZE = LAG_SIZE
         self.K_FOLD = K_FOLD
         self.CORE_NUM = CORE_NUM
         self.MAX_EPOCH = MAX_EPOCH
