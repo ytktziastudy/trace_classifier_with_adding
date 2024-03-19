@@ -1,5 +1,5 @@
 ## Code Main Structure 
-## add by ktzia
+## Add by ktzia
 
 
 list function in main.py
