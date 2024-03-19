@@ -1,16 +1,15 @@
-## Code Main Structure
+## Code Main Structure 
+## add by ktzia
 
-* **main.py** the main function [main-readme](code/main-readme.md)
-* **config.py** the config settings
-* **pytorch_warmup** Tony-Y's implementation of [pytorch_warmup](https://github.com/Tony-Y/pytorch_warmup).
-* **output** the training output files
-* **others** other lib py files
-* add by ktzia
-* **dataset.py**
-* **model.py**
-* **mylib.py**
-* **my_hilbertcurve.py**
-* **draw_tsne.py**
+
+list function in main.py
+* **main** the main function [main-readme](code/main-readme.md)
+* **one_of_k_fold_test** the config settings
+* **read_dataset** Tony-Y's implementation of [pytorch_warmup](https://github.com/Tony-Y/pytorch_warmup).
+* **one_fold_test** the training output files
+* **k_fold_test** other lib py files
+* **one_round_test**
+
 
 ## How to Config it?
 All the configurations are set in [config.py](./config.py).
