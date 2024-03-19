@@ -37,7 +37,7 @@ list function in model.py
 
 * **forward2**
   ------------------
- Another variant of the forward method, potentially for a different model architecture or to explore various data processing strategies within the neural network..
+  Another variant of the forward method, potentially for a different model architecture or to explore various data processing strategies within the neural network.
 
 ## Related Functions
 
