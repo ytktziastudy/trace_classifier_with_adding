@@ -1,7 +1,7 @@
 # Intro
---------
-**this code copy from https://github.com/shashadehuajiang/trace_classifier with my additions
-The changes were made in the [config](config.py) file and also in the [dataset](code/dataset.py) file**
+
+## This code copy from https://github.com/shashadehuajiang/trace_classifier with my additions The changes were made in the [config](config.py) file and also in the [dataset](code/dataset.py) file 
+
 ----------
 This repo is the official implementation of **An Input-Agnostic Hierarchical Deep Learning Framework for Traffic Fingerprinting (USENIX Security '23)**. We provide code and datasets here.
 
