@@ -26,11 +26,23 @@ def dataset_json(json_name = '', rand_seed = 1, twoclass = False):
     for i in range(len(data_cha)):
         if len(data[i][0])>0:
             start_time = data[i][0][0][0][0]
+        #for i_f in range(len(data_cha[i][0])):
+        #    for i_v in range(len(data_cha[i][0][i_f])-1,-1,-1):
+        #        if i_v>=1:
+        #            data_cha[i][0][i_f][i_v][0] -= data[i][0][i_f][i_v-1][0]
+        #        elif i_v==0:
+        #            data_cha[i][0][i_f][i_v][0] -= start_time
         for i_f in range(len(data_cha[i][0])):
-            for i_v in range(len(data_cha[i][0][i_f])-1,-1,-1):
-                if i_v>=1:
-                    data_cha[i][0][i_f][i_v][0] -= data[i][0][i_f][i_v-1][0]
-                elif i_v==0:
+            for i_v in range(len(data_cha[i][0][i_f]) - 1, -1, -1):
+                for i_l in range(2, config.LAG_SIZE + 1):
+                    if i_v - i_l >= 0:
+                        leg_d = data[i][0][i_f][i_v][0] - data[i][0][i_f][i_v - i_l][0]
+                    else:
+                        leg_d = data[i][0][i_f][i_v][0] - start_time
+                    data_cha[i][0][i_f][i_v] = np.r_[data_cha[i][0][i_f][i_v], leg_d]
+                if i_v >= 1:
+                    data_cha[i][0][i_f][i_v][0] -= data[i][0][i_f][i_v - 1][0]
+                elif i_v == 0:
                     data_cha[i][0][i_f][i_v][0] -= start_time
 
     print('read dataset finish...')
