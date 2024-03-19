@@ -1,7 +1,7 @@
 ## Code Structure
 
-* **main.py** the main function [main-readme](main-readme.md)
-* **config.py** the config settings
+* **main.py** the main function [main-readme add by ktzia](main-readme.md)
+* **config.py** the config settings [config-readme add by ktzia](config-readme.md)
 * **pytorch_warmup** Tony-Y's implementation of [pytorch_warmup](https://github.com/Tony-Y/pytorch_warmup).
 * **output** the training output files
 * **others** other lib py files
