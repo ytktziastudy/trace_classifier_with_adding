@@ -11,8 +11,7 @@ list function in main.py
   The primary entry point of the script. It orchestrates the overall process, including setting up the environment, initiating model training, performing     evaluations, and optionally visualizing the results. It determines which training and evaluation functions to call based on the configuration.
 * **one_of_k_fold_test** 
   -------------
-  **Description:** 
-  Performs a single fold of k-fold cross-validation. This function is responsible for dividing the dataset into training, validation,and test sets for one specific fold, training the model on this fold, and evaluating its performance <br>
+ Performs a single fold of k-fold cross-validation. This function is responsible for dividing the dataset into training, validation,and test sets for one specific fold, training the model on this fold, and evaluating its performance <br>
   **Configurations Used:** 
   Configuration settings related to dataset splitting (K_FOLD), training sample limits (TRAIN_SAMPLE_MAX, VALID_SAMPLE_MAX)
 * **read_dataset**
