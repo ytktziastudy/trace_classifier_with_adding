@@ -5,47 +5,53 @@
 
 
 list function in mylib.py
-* **process_final_results**
-  -----
-  The primary entry point of the script. It orchestrates the overall process, including setting up the environment, initiating model training, performing     evaluations, and optionally visualizing the results. It determines which training and evaluation functions to call based on the configuration.
-* **name_generator** 
-  -------------
-   Performs a single fold of k-fold cross-validation. This function is responsible for dividing the dataset into training, validation,and test sets for one specific fold, training the model on this fold, and evaluating its performance <br>
- 
-* **cut_dataset2**
-  ------------------
-  Loads the dataset from the specified source and preprocesses it according to the requirements of the model. It converts raw data into a format suitable for     training and evaluation, including feature extraction and normalization.
   
-* **cut_dataset**
-  ------------
-  Executes the training and evaluation process using a single fold, i.e., without performing k-fold cross-validation. This is useful for quick testing or when the dataset is too small to be divided into multiple folds
-  
+## Data Preprocessing and Transformation
+
 * **pre_process**
   ------------------
-  Orchestrates the k-fold cross-validation process by calling one_of_k_fold_test for each fold. It ensures that every data point is used for both training and validation exactly once, providing a robust estimate of the model's performance.
+  Applies a series of preprocessing steps to the raw dataset to prepare it for training. These steps might include normalization, scaling, handling missing values, or encoding categorical features.
   
 * **pre_process_1**
   ------------------
-  Facilitates a complete round of training and evaluation without dividing the dataset. It preprocesses the data, trains the model on the entire training set, and evaluates it on the whole validation set. This function is suitable for initial model assessments or when cross-validation is not required.
+  A specific version of preprocessing that applies a particular set of transformations to the dataset. This might include task-specific preprocessing steps or adjustments based on dataset characteristics.
 
  
 * **drop_empty_data**
   ------------------
-  Facilitates a complete round of training and evaluation without dividing the dataset. It preprocesses the data, trains the model on the entire training set, and evaluates it on the whole validation set. This function is suitable for initial model assessments or when cross-validation is not required.
+  Removes samples from the dataset that are empty, corrupted, or otherwise unsuitable for training. This cleanup step is essential for maintaining data quality and model reliability.
 
+## Dataset Splitting and Organization
  
+* **cut_dataset2**
+  ------------------
+  An alternative or updated version of cut_dataset that splits the dataset into training, validation, and test sets. This function might offer additional features or improvements, such as more sophisticated splitting criteria or better handling of imbalanced datasets.
+  
+* **cut_dataset**
+  ------------
+   Divides the dataset into distinct subsets for training, validation, and testing purposes. This is crucial for evaluating the model's performance on unseen data and preventing overfitting.
+
+## Feature Extraction and Representation
+* **process_final_results**
+  -----
+  Aggregates and summarizes the results after model training and evaluation. This function might compile metrics across different folds or datasets, calculate averages, standard deviations, and prepare the results for reporting or further analysis.
+
+* **dataset_use_hilbertcurve**
+  ------------------
+  Applies the Hilbert curve transformation to the dataset, mapping multidimensional data to a one-dimensional space while preserving locality. This can be particularly useful for visualizing high-dimensional data or for preprocessing steps that benefit from maintaining the spatial relationships between data points.
+
+* **name_generator** 
+  -------------
+   Generates unique names or identifiers for models, results files, or dataset partitions. This utility function is useful for organizing outputs, ensuring files are saved without overwriting, and maintaining a clear record of experimental runs.
+
 * **tailoring_dataset**
   ------------------
-  Facilitates a complete round of training and evaluation without dividing the dataset. It preprocesses the data, trains the model on the entire training set, and evaluates it on the whole validation set. This function is suitable for initial model assessments or when cross-validation is not required.
+  Modifies the dataset to fit the model's input requirements or to enhance model performance. This might involve selecting specific features, reducing the dataset's size, or transforming data formats.
 
 
 * **dataset2flow**
   ------------------
-  Facilitates a complete round of training and evaluation without dividing the dataset. It preprocesses the data, trains the model on the entire training set, and evaluates it on the whole validation set. This function is suitable for initial model assessments or when cross-validation is not required.
-
-* **dataset_use_hilbertcurve**
-  ------------------
-  Facilitates a complete round of training and evaluation without dividing the dataset. It preprocesses the data, trains the model on the entire training set, and evaluates it on the whole validation set. This function is suitable for initial model assessments or when cross-validation is not required.
+  Converts packet-level data into flow-level representations. This function is particularly relevant for network traffic analysis, where understanding the flow of packets is crucial for tasks like intrusion detection or traffic classification.
 
 
 
