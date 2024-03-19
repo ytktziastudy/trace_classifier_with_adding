@@ -5,12 +5,6 @@
 * **pytorch_warmup** Tony-Y's implementation of [pytorch_warmup](https://github.com/Tony-Y/pytorch_warmup).
 * **output** the training output files
 * **others** other lib py files
-* add by ktzia
-* **dataset.py**
-* **model.py**
-* **mylib.py**
-* **my_hilbertcurve.py**
-* **draw_tsne.py**
 
 ## How to Config it?
 All the configurations are set in [config.py](./config.py).
@@ -41,5 +35,14 @@ OUTPATH = './output/20230505_test/'
 ```
 
 Change the config file and run main.py.
+```diff
++ add by ktzia
+```
+##extra deatils
+* **dataset.py**  Functions for loading and processing datasets
+* **model.py**  Defines the neural network model (Net) used for classification.
+* **mylib.py** Contains utility functions for dataset processing and evaluation.
+* **my_hilbertcurve.py**
+* **draw_tsne.py**
 
 
