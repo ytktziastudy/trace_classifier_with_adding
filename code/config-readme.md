@@ -1,4 +1,4 @@
-## Code config.py Structure 
+## Params config.py 
 ```diff
 + Add by ktzia
 + change function by me for add lag function
