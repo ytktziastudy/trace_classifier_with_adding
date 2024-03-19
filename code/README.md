@@ -43,6 +43,6 @@ Change the config file and run main.py.
 * **model.py** [model-readme](model-readme.md) Defines the neural network model (Net) used for classification.
 * **mylib.py** [mylib-readme](mylib-readme.md) Contains utility functions for dataset processing and evaluation.
 * **my_hilbertcurve.py**
-* **draw_tsne.py**
+* **draw_tsne.py** <br>
 Both my_hilbertcurve.py and draw_tsne.py serve crucial roles in the preprocessing and analysis of model data, aiding both in the improvement of model input through dimensionality reduction and in the interpretation of model outputs or dataset structures through visualization.
 
