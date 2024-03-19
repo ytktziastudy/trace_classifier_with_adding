@@ -1,7 +1,7 @@
 ## Code dataset.py Structure 
 ```diff
 + Add by ktzia
-+ change function by me for add lag
++ change function by me for add lag function
 ```
 
 The dataset load data json and add columns lag to datasets 
