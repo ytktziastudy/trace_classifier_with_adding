@@ -1,3 +1,9 @@
+## Code config.py Structure 
+```diff
++ Add by ktzia
++ change function by me for add lag function
+```
+
 ## Model and Dataset Configuration
 * **DATASET_SHARE:** Indicates if the dataset is shared across processes. This flag might be used when initializing data loaders or managing multiprocessing tasks.
 * **PACTETCNN:** A flag to enable or disable the use of Convolutional Neural Networks (CNN) for packet analysis. This would influence the choice of architecture in functions related to feature extraction from packets.
