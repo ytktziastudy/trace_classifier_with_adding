@@ -7,6 +7,7 @@
 ## Model and Dataset Configuration
 **My addition to the code**
 * **LAG_SIZE:** You can write how many lag fields you want to add to the packet vector where 0 means one field with one interval and n means n-1 additional fields.
+  <br>
 **End my addition to the code**
 
 * **DATASET_SHARE:** Indicates if the dataset is shared across processes. This flag might be used when initializing data loaders or managing multiprocessing tasks.
