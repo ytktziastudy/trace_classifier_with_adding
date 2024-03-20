@@ -37,7 +37,7 @@ OUTPATH = './output/20230505_test/'
 Change the config file and run main.py.
 ```diff
 + add by ktzia
-+ [dataset.py](dataset.py) My addition to the code
++ dataset.py My addition to the code
 ```
 
 * **dataset.py** [dataset-readme](dataset-readme.md) Functions for loading and processing datasets 
