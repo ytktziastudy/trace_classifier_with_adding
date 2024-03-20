@@ -5,12 +5,15 @@
 ```
 
 ## Model and Dataset Configuration
+**My addition to the code**
+* **LAG_SIZE:** You can write how many lag fields you want to add to the packet vector where 0 means one field with one interval and n means n-1 additional fields.
+**End my addition to the code**
+
 * **DATASET_SHARE:** Indicates if the dataset is shared across processes. This flag might be used when initializing data loaders or managing multiprocessing tasks.
 * **PACTETCNN:** A flag to enable or disable the use of Convolutional Neural Networks (CNN) for packet analysis. This would influence the choice of architecture in functions related to feature extraction from packets.
 * **TRANSFORMER:** Determines whether a Transformer model is used. This could affect model initialization and the architecture setup functions, dictating the use of attention mechanisms over other types.
 * **PACKET2FLOW:** Specifies the method for converting packets to flow-level features, influencing the choice of neural network architecture or feature extraction methods in flow-related processing functions.
 * **FLOW2TRACE:** Defines how flow-level features are aggregated into trace-level representations, affecting functions that operate on higher-level data aggregation.
-* **LAG_SIZE:** Configures the lag size for temporal features, potentially used in preprocessing functions for time series data.
 * **K_FOLD, CORE_NUM:** These parameters control the execution of k-fold cross-validation and parallel processing, affecting functions related to model evaluation and training.
 * **MAX_EPOCH, DEVICE:** Determine the maximum number of training epochs and the computation device (CPU/GPU), influencing the main training loop and device allocation for tensors.
 * **DATASET_FOLDER, DATASET_NAME:** Specify the location and name of the dataset, used in data loading and preprocessing functions.
